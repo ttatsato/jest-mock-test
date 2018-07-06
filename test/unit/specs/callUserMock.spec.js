@@ -2,6 +2,5 @@
 import callUser from '@/components/models/callUser'
 jest.mock('@/components/models/user')
 test('テスト対象コンポから呼び出すコンポをモック化できるか？', () => {
-  console.log(callUser.methods.getUserInfo())
   expect(callUser.methods.getUserInfo()).toEqual({age: 622, name: 'Mock name'})
 })
